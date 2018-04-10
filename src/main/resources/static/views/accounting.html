@@ -1,0 +1,36 @@
+<div class="others">
+    <div class="others-header">
+        <h1>Accounting</h1>
+    </div>
+    <div class="others-main">
+        <div class="accounting-header">
+            <p>Accurate, precise and friendly accountancy service</p>
+        </div>
+        <div class="accounting-links">
+            <div ng-click="firstLinkActive=true" ng-class="{'faded': firstLinkActive == false }">IAS Accounting</div>
+            <div ng-click="firstLinkActive=false" ng-class="{'faded': firstLinkActive== true || firstLinkActive == undefined }">IFRS Reporting</div>
+        </div>
+        <div class="accounting-content">
+            <div class="accounting-text" ng-if="firstLinkActive == false">
+                <p>The International Financial Reporting Standards are standards issued by the IFRS Foundation and the International Accounting Standards Board (IASB). They are called up to facilitate development of business relations introducing common language of business affairs.</p>
+                <p>IFRS financial statements consist of (IAS1.8):</p>
+                <ul>
+                    <li>a Statement of Financial Position</li>
+                    <li>a Statement of Comprehensive Income</li>
+                    <li>a Statement of Changes in Equity (SOCE)</li>
+                    <li>a Cash Flow Statement or Statement of Cash Flows</li>
+                </ul>
+                <p>IFRS are used in South Korea, European Union, India, Hong Kong, Australia, Malaysia, Pakistan, GCC countries, Russia, Chile, Philippines, South Africa, Singapore and Turkey</p>
+                <p>Sometimes public regulators require aplication of IFRS in particular field such as banking, insurance, investments etc. It's generally accepted for a large companies to prepare and file statements according to both: national standarts and IFRS.</p>
+                <p>We provide first-class reporting services according to IFRS.</p>
+            </div>
+            <div class="accounting-text" ng-if="firstLinkActive == true || firstLinkActive== undefined">
+                <p>International Accounting Standards (IASs) were issued by the antecedent International Accounting Standards Council (IASC). IAS is a set of standards stating how particular types of transactions and other events should be reflected in financial statements.</p>
+                <p>Since 2001, the new set of standards has been known as the international financial reporting standards (IFRS) and has been issued by the International Accounting Standards Board (IASB). They were called up to replace IAS, however though IASC had no authority to require compliance with its accounting standards, public authorities in many countries still require the financial statements of particular companies to be prepared in accordance with IAS.</p>
+                <p>If this is your case - we may help. Your compliance is our business.</p>
+                <p>We provide first-class bookkeeping services according to IAS.</p>
+            </div>
+        </div>
+        <a href="#/"><button type="button" class="find-more">Find out More</button></a>
+    </div>
+</div>

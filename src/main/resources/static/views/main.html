@@ -1,0 +1,98 @@
+<div class="main">
+    <div class="content">
+        <div class="content-top">
+            <h1>Accounting and consultancy</h1>
+            <h3>First-class IAS and IFRS accountants and fiduciaries</h3>
+        </div>
+        <div class="content-main">
+            <div class="content-main-top">
+                <a href="#accounting" class="content-main-partial">
+                    <img src="img/book-and-pen.svg" alt="">
+                    <h4>Accountancy</h4>
+                    <div class="content-main-text">
+                        Your jurisdiction introduced IAS or IFRS requirements? Don't panic - we will help. We have team of skilled and creative professionals. 100% compliance guaranteed.
+                    </div>
+                </a>
+                <a href="#consultancy" class="content-main-partial">
+                    <img src="img/scale.svg" alt="">
+                    <h4>Legal advisory</h4>
+                    <div class="content-main-text">
+                        Need advice? We have professional counsels in most field of business law - tax, corporate and dispute resolution.                    </div>
+                </a>
+                <a href="#information" class="content-main-partial">
+                    <img src="img/home.svg" alt="">
+                    <h4>Company formation</h4>
+                    <div class="content-main-text">
+                        Why we? We offer most actual jurisdictions to optimize your business. We do not offer this service on a large scale, so may be sure that your new company reputation is in safe.                    </div>
+                </a>
+            </div>
+            <div class="content-main-bottom">
+                <a href="#foundations" class="content-main-partial">
+                    <img src="img/diamond.svg" alt="">
+                    <h4>Asset protection & management: foundations and trusts</h4>
+                    <div class="content-main-text">
+                        You lack individual solutions? We provide individual structures for your assets protection and privacy. We offer exceptional flexibility.                    </div>
+                </a>
+                <a href="#about" class="content-main-partial">
+                    <img src="img/lock.svg" alt="">
+                    <h4>Ultimate privacy</h4>
+                    <div class="content-main-text">
+                        We use advanced encryption technologies in our communication and data-protection. We ensure global security of your personal data.                    </div>
+                </a>
+                <a href="#services" class="content-main-partial">
+                    <img src="img/multiple-users-silhouette.svg" alt="">
+                    <h4>Fiduciary services</h4>
+                    <div class="content-main-text">
+                        We are your best option if you need professionals to do your business. You will work with a team of knowing and responsive professionals you may rely on.                    </div>
+                </a>
+            </div>
+            <div class="content-main-quote" ng-class="{'fade-out': pixelsScrolled>=750}">
+                <h2>"Success is the result of perfection, hard work, learning from failure, loyalty, and persistence."</h2>
+                <h4>Colin Powell</h4>
+                <p>65th United States Secretary of State</p>
+            </div>
+        </div>
+        <div class="content-bottom">
+            <div class="content-bottom-contact-info" ng-class="{'fade-out': pixelsScrolled>=750}">
+                <h1>Contact us</h1>
+                <p>Main office:</p>
+                <br>
+                <p>New Horizon Building,3 ½, Miles Philip S.W., Goldstone Highway, </p>
+                <p>Belize city, Belize</p>
+                <br>
+                <p>Call us:</p>
+                <br>
+                <p>Tel.: +44 20 328 781 56</p>
+                <br>
+                <p>E-mail: </p>
+                <br>
+                <p>info@aviantex.ltd</p>
+            </div>Y
+            <div class="content-bottom-contact-form" ng-class="{'fade-out': pixelsScrolled>=750}">
+                <form action="">
+                    <div class="form-heading"><span>Contact</span></div>
+                    <div class="form-name-section">
+                        <input type="text" placeholder="Your Name" ng-model="userName">
+                        <input type="email" placeholder="Your Email" ng-model="userEmail">
+                    </div>
+                    <input class="form-input-one" type="text" placeholder="Subject" ng-model="userSubject">
+                    <textarea ng-model="userMessage" class="textarea-input-one" cols="30" rows="5" placeholder="Your Message"></textarea>
+                    <input type="button" value="Send Message" ng-click="sendForm()" class="send-form-button">
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
+<div ng-click="displayPopover = false">
+    <div class="form-ok-popup"  ng-if="displayPopover == true">
+        <h4>Close</h4>
+        <h1>Your Message has been sent!</h1>
+    </div>
+</div>
+<div ng-click="displayBadRequest = false">
+    <div class="form-ok-popup"  ng-if="displayBadRequest == true">
+        <h4>Close</h4>
+        <h1>Oops! Something went wrong... Try again, please!</h1>
+    </div>
+</div>

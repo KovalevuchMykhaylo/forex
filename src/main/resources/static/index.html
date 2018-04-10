@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Aviantex</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.min.css">
+</head>
+<body ng-app="cleaningApp" ng-controller="homeCtrl as home" style="{{customBackground}}">
+    <header ng-class="{'opacity': pixelsScrolled>=280}">
+        <a href="#/" class="header-logo" ng-class="{'black': pixelsScrolled>=280}">
+            <h1>Aviantex Group Ltd</h1>
+        </a>
+        <div class="header-menu">
+            <a href="#/" ng-class="{'black': pixelsScrolled>=280}">Main Page <div class="pseudo-block"></div></a>
+            <a href="#/" ng-class="{'black': pixelsScrolled>=280}" ng-mouseover="showDropDown = true" ng-mouseleave="showDropDown = false">Our Services
+                <div class="pseudo-block"></div>
+            </a>
+            <a href="#about" ng-class="{'black': pixelsScrolled>=280}">About Us <div class="pseudo-block"></div></a>
+            <a href="#contact" ng-class="{'black': pixelsScrolled>=280}">Contact Us <div class="pseudo-block"></div></a>
+            <div class="header-dropdown-menu" ng-class="{'show': showDropDown == true}" ng-mouseover="showDropDown = true" ng-mouseleave="showDropDown = false">
+                <a href="#accounting" ng-click="showDropDown = false">Accounting</a>
+                <a href="#consultancy" ng-click="showDropDown = false">Legal consultancy</a>
+                <a href="#information" ng-click="showDropDown = false">Company formation</a>
+                <a href="#foundations" ng-click="showDropDown = false">Foundations & trusts</a>
+                <a href="#services" ng-click="showDropDown = false">Fiduciary services</a>
+            </div>
+        </div>
+    </header>
+    <ng-view autoscroll="true"></ng-view>
+<script src="minjs/scripts.min.js"></script>
+</body>
+</html>
